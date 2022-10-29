@@ -13,15 +13,40 @@
 .title-logo {
 height: 100px;
 padding: 0 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.user-name a {
+  color: #FAFAFA;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.new-chat-btn a {
+  color: deepskyblue;
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  text-align: center;
 }
 
 .chat-list {
   height: calc(100vh - 100px);
   background-color: #2F3E51;
   padding: 0 20px;
+  overflow: scroll;
 }
 
+.chatroom {
+  padding: 20px 2px 40px;
+}
 
+.chatroom a {
+  color: white;
+  text-decoration: none;
+}
 
 
 
@@ -41,7 +66,7 @@ padding: 0 20px;
 }
 
 .messages {
-  height: calc(100% - 100px - 90px);
+  height: calc(100vh - 100px - 90px);
   background-color: #FAFAFA;
   padding: 40px 40px 0px; /* 上、左右、下 */
 }
