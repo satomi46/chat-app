@@ -6,25 +6,7 @@
   </div>
 
   <div class="messages">
-    <div class="message">
-      <div class="upper-message">
-        <div class="message-name">Tom</div>
-        <div class="message-date">2022/10/29(Sat) 10:40:00</div>
-      </div>
-        <div class="lower-message">
-          <div class="message-text">おはよう</div>
-      </div>
-    </div>
-
-    <div class="message">
-      <div class="upper-message">
-        <div class="message-name">Tom</div>
-        <div class="message-date">2022/10/29(Sat) 10:40:00</div>
-      </div>
-        <div class="lower-message">
-          <div class="message-text">おはよう</div>
-      </div>
-    </div>
+    <%= render partial: 'message', collection: @messages %> <%# _messageファイルを呼び出し、@message.each doと同様の処理を %>
   </div>
 
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
