@@ -1,7 +1,7 @@
 
     <div class="title-logo">
       <div class="user-name">
-        <a href="#">Tom</a>
+        <%= link_to current_user.name, edit_user_path(current_user)%>
       </div>
       <div class="new-chat-btn">
         <a href="#">チャットを作成する</a>
